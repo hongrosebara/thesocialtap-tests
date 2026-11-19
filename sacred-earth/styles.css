@@ -155,7 +155,6 @@ h3 { font-size: var(--fs-h3); color: var(--gold); margin-bottom: var(--s-2); }
 /* =========================================================
    4. HEADER
    ========================================================= */
-.topbar { background: var(--topbar); height: var(--s-2); }
 .site-nav { background: var(--nav); position: sticky; top: 0; z-index: 50; box-shadow: 0 2px 12px rgba(0,0,0,.25); }
 .site-nav .wrap { display: flex; align-items: center; gap: var(--s-6); height: var(--nav-h); }
 .site-nav .logo img { height: calc(var(--nav-h) - var(--s-5)); width: auto; }
@@ -181,7 +180,7 @@ h3 { font-size: var(--fs-h3); color: var(--gold); margin-bottom: var(--s-2); }
 }
 .btn:hover { background: var(--orange-dark); transform: translateY(-1px); }
 .btn .arrow { font-size: 18px; letter-spacing: 0; line-height: 1; }
-.btn-sm { padding: var(--s-3) var(--s-5); font-size: var(--fs-xs); }
+.btn.btn-sm { padding: var(--s-2) var(--s-4); font-size: var(--fs-xs); letter-spacing: .16em; }
 .btn-green { background: var(--green); }
 .btn-green:hover { background: var(--green-dark); }
 .btn-ghost { background: transparent; border-color: var(--gold); color: var(--gold); }
@@ -363,18 +362,3 @@ footer .wrap { display: flex; justify-content: space-between; align-items: cente
 .social a { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: #fff; color: #000; transition: background .2s; }
 .social a:hover { background: var(--gold); }
 .social svg { width: 16px; height: 16px; }
-
-/* =========================================================
-   18. STICKY MOBILE CTA
-   ========================================================= */
-.sticky-cta { display: none; }
-@media (max-width: 760px) {
-  body { padding-bottom: calc(var(--s-8) + var(--s-3)); }
-  .sticky-cta {
-    display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
-    background: var(--nav); border-top: 1px solid var(--line);
-    padding: var(--s-3) var(--gutter); gap: var(--s-3); align-items: center;
-  }
-  .sticky-cta .t { flex: 1; font-size: 13px; line-height: 1.35; color: var(--gold-soft); }
-  .sticky-cta .btn { padding: var(--s-3) var(--s-5); font-size: var(--fs-xs); }
-}
