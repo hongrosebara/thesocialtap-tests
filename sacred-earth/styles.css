@@ -167,7 +167,7 @@ img { max-width: 100%; display: block; }
 a { color: var(--gold); }
 p { margin: 0 0 var(--s-4); }
 p:last-child { margin-bottom: 0; }
-h1, h2, h3, .lead, .hero p, blockquote { text-wrap: balance; }
+h1, h2, h3, .lead, .label, .hero p, .panel p, blockquote { text-wrap: balance; }
 h1, h2, h3 { font-family: var(--font-head); font-weight: 400; margin: 0; line-height: var(--lh-tight); letter-spacing: var(--track-head); }
 
 .wrap   { max-width: var(--w-wide); margin: 0 auto; padding: 0 var(--gutter); }
@@ -251,7 +251,14 @@ h3 { font-size: var(--fs-h3); color: var(--gold); margin-bottom: var(--s-2); }
 /* =========================================================
    6. HERO
    ========================================================= */
-.hero { position: relative; min-height: clamp(560px, 86vh, 860px); display: flex; align-items: flex-end; overflow: hidden; }
+/* The hero fills the visible screen under the sticky header and centres
+   its content vertically. svh = the viewport with mobile browser bars
+   showing, so nothing sits behind them. It grows if content needs more. */
+.hero {
+  position: relative; display: flex; align-items: center; overflow: hidden;
+  min-height: max(560px, calc(100vh - var(--nav-h)));
+  min-height: max(560px, calc(100svh - var(--nav-h)));
+}
 /* Each page sets its photo's focus point: --focus (desktop/tablet) and
    --focus-m (phones, where only a narrow slice of a wide photo shows). */
 .hero-bg { position: absolute; inset: 0; background-size: cover; background-position: var(--focus, center); }
@@ -265,7 +272,7 @@ h3 { font-size: var(--fs-h3); color: var(--gold); margin-bottom: var(--s-2); }
     radial-gradient(ellipse 70% 50% at 50% 68%, rgba(0,0,0,.38), transparent 72%),
     linear-gradient(180deg, rgba(0,0,0,.2) 0%, rgba(0,0,0,.35) 45%, var(--bg) 100%);
 }
-.hero-inner { position: relative; z-index: 2; width: 100%; text-align: center; padding: var(--s-10) var(--gutter) var(--s-8); }
+.hero-inner { position: relative; z-index: 2; width: 100%; text-align: center; padding: var(--s-8) var(--gutter); }
 /* Hierarchy: label (caps) > title (caps) > subtitle > facts line > buttons.
    Only the label, title and buttons use spaced capitals. */
 .hero .label { color: var(--sand); margin-bottom: var(--s-4); }
@@ -386,8 +393,8 @@ h3 { font-size: var(--fs-h3); color: var(--gold); margin-bottom: var(--s-2); }
    13. LISTS
    ========================================================= */
 .checks { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4) var(--s-7); }
-.checks li { position: relative; padding-left: var(--s-6); }
-.checks li::before { content: ""; position: absolute; left: 0; top: .55em; width: 14px; height: 8px; border-left: 2px solid var(--orange-text); border-bottom: 2px solid var(--orange-text); transform: rotate(-45deg); }
+.checks li { position: relative; padding-left: var(--s-6); line-height: 1.5; }
+.checks li::before { content: ""; position: absolute; left: 0; top: .45em; width: 14px; height: 8px; border-left: 2px solid var(--orange-text); border-bottom: 2px solid var(--orange-text); transform: rotate(-45deg); }
 .checks.one-col { grid-template-columns: 1fr; }
 @media (max-width: 700px) { .checks { grid-template-columns: 1fr; } }
 
@@ -413,7 +420,7 @@ h3 { font-size: var(--fs-h3); color: var(--gold); margin-bottom: var(--s-2); }
 .panel .price { font-family: var(--font-head); color: var(--gold); font-size: var(--fs-price); line-height: 1; margin: 0 0 var(--s-3); }
 .panel .price.date { font-size: var(--fs-display); }
 .panel .price-note { color: var(--muted); margin-bottom: var(--s-6); }
-.panel .checks { text-align: left; max-width: 400px; margin: 0 auto var(--s-6); }
+.panel .checks { text-align: left; max-width: 400px; margin: 0 auto var(--s-6); gap: var(--s-3); }
 .panel .small { font-size: var(--fs-small); color: var(--muted); margin-top: var(--s-4); }
 @media (max-width: 600px) {
   .panel { padding: var(--s-7) var(--s-5); }
