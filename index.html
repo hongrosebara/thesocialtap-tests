@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Test Pages</title>
+<style>
+  :root {
+    --bg: #f6f5f2; --card: #fff; --text: #1c1b19; --muted: #6f6b64; --line: #e4e1da; --accent: #d85c2b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161513; --card: #201f1c; --text: #f1eee8; --muted: #9c978e; --line: #33312d; --accent: #f07a4a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 64px 16px 80px; }
+  h1 { font-size: 28px; margin: 0 0 6px; letter-spacing: -.01em; }
+  .intro { color: var(--muted); margin: 0 0 40px; }
+  .project { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 22px 22px 8px; margin-bottom: 20px; }
+  .project h2 { font-size: 18px; margin: 0 0 2px; }
+  .project .meta { color: var(--muted); font-size: 14px; margin: 0 0 14px; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { border-top: 1px solid var(--line); }
+  li a { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 14px 0; color: var(--text); text-decoration: none; }
+  li a:hover .name { color: var(--accent); }
+  .path { color: var(--muted); font-size: 13px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; word-break: break-all; text-align: right; }
+  .arrow { color: var(--accent); }
+  @media (max-width: 520px) { li a { flex-direction: column; align-items: flex-start; gap: 2px; } .path { text-align: left; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Test pages</h1>
+  <p class="intro">Landing pages in testing. Not for public distribution.</p>
+
+  <!-- To add a project: copy a <section class="project"> block and edit the links. -->
+  <section class="project">
+    <h2>Sacred Earth</h2>
+    <p class="meta">Retreat sales pages · Meta ads</p>
+    <ul>
+      <li><a href="/sacred-earth/new-zealand-retreat-2027"><span class="name">New Zealand Retreat 2027 <span class="arrow">→</span></span><span class="path">/sacred-earth/new-zealand-retreat-2027</span></a></li>
+      <li><a href="/sacred-earth/journey-into-stillness-2027"><span class="name">Journey Into Stillness 2027 <span class="arrow">→</span></span><span class="path">/sacred-earth/journey-into-stillness-2027</span></a></li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
