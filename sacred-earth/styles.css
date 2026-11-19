@@ -48,7 +48,7 @@
   --fs-lead: var(--step-1);        /* 21.3  lead lines, hero subtitle */
   --fs-h3: var(--step-1);          /* 21.3  card / tile titles */
   --fs-quote: var(--step-2);       /* 26.6  pull quote */
-  --fs-display: var(--step-3);     /* 33.2  hero dates, booking date */
+  --fs-display: var(--step-3);     /* 33.2  booking-panel date */
   --fs-h2: var(--step-4);          /* 41.5  section headings */
   --fs-price: var(--step-5);       /* 51.9  price */
   --fs-h1: var(--step-6);          /* 64.8  page title */
@@ -253,20 +253,31 @@ h3 { font-size: var(--fs-h3); color: var(--gold); margin-bottom: var(--s-2); }
    ========================================================= */
 .hero { position: relative; min-height: clamp(560px, 86vh, 860px); display: flex; align-items: flex-end; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
-.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.25) 0%, rgba(0,0,0,.4) 45%, var(--bg) 100%); }
+/* Scrim: a soft dark pool behind the text block on top of the fade to page colour */
+.hero::after {
+  content: ""; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 68%, rgba(0,0,0,.38), transparent 72%),
+    linear-gradient(180deg, rgba(0,0,0,.2) 0%, rgba(0,0,0,.35) 45%, var(--bg) 100%);
+}
 .hero-inner { position: relative; z-index: 2; width: 100%; text-align: center; padding: var(--s-10) var(--gutter) var(--s-8); }
+/* Hierarchy: label (caps) > title (caps) > subtitle > facts line > buttons.
+   Only the label, title and buttons use spaced capitals. */
 .hero .label { color: var(--sand); margin-bottom: var(--s-4); }
 .hero h1 { font-size: var(--fs-h1); color: var(--gold-soft); text-shadow: 0 2px 30px rgba(0,0,0,.45); }
-.hero .sub { font-family: var(--font-head); font-size: var(--fs-lead); letter-spacing: .08em; color: var(--gold-soft); margin: var(--s-4) 0 0; text-shadow: 0 2px 18px rgba(0,0,0,.5); }
-.hero .dates { font-family: var(--font-body); font-weight: 400; letter-spacing: .08em; text-transform: uppercase; font-size: var(--fs-display); color: var(--gold); margin: var(--s-6) 0 var(--s-2); }
-.hero .where { font-family: var(--font-ui); font-weight: 600; letter-spacing: .16em; text-transform: uppercase; font-size: var(--fs-small); color: var(--orange-text); margin: 0 0 var(--s-6); text-shadow: 0 1px 12px rgba(0,0,0,.7); }
+.hero .sub { font-family: var(--font-body); font-size: var(--fs-lead); line-height: 1.5; color: var(--gold-soft); margin: var(--s-4) 0 0; text-shadow: 0 1px 16px rgba(0,0,0,.6); }
+.hero .meta { font-family: var(--font-body); font-size: var(--fs-body); line-height: 1.5; margin: var(--s-5) 0 var(--s-7); text-shadow: 0 1px 12px rgba(0,0,0,.7); }
+.hero .meta .dates { color: var(--gold); font-weight: 600; }
+.hero .meta .sep { color: var(--sand); opacity: .7; margin: 0 var(--s-2); }
+.hero .meta .where { color: var(--gold-soft); }
 .hero .note { margin-top: var(--s-4); font-size: var(--fs-small); color: var(--muted); }
 @media (max-width: 600px) {
   .hero .btn-row { flex-direction: column; align-items: center; }
   .hero .btn-row .btn { --btn-min-w: 260px; }
-  .hero .sub { font-family: var(--font-body); font-size: var(--fs-body); letter-spacing: 0; line-height: 1.5; margin-top: var(--s-3); }
-  .hero .dates { letter-spacing: .06em; margin-top: var(--s-5); }
-  .hero .where { font-family: var(--font-body); font-weight: 600; font-size: var(--fs-body); letter-spacing: 0; text-transform: none; line-height: 1.5; margin-bottom: var(--s-5); }
+  .hero .sub { font-size: var(--fs-body); margin-top: var(--s-3); }
+  .hero .meta { margin: var(--s-4) 0 var(--s-6); }
+  .hero .meta .sep { display: none; }
+  .hero .meta .dates, .hero .meta .where { display: block; }
 }
 
 /* =========================================================
