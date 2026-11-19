@@ -252,7 +252,12 @@ h3 { font-size: var(--fs-h3); color: var(--gold); margin-bottom: var(--s-2); }
    6. HERO
    ========================================================= */
 .hero { position: relative; min-height: clamp(560px, 86vh, 860px); display: flex; align-items: flex-end; overflow: hidden; }
-.hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
+/* Each page sets its photo's focus point: --focus (desktop/tablet) and
+   --focus-m (phones, where only a narrow slice of a wide photo shows). */
+.hero-bg { position: absolute; inset: 0; background-size: cover; background-position: var(--focus, center); }
+@media (max-width: 600px) {
+  .hero-bg { background-position: var(--focus-m, var(--focus, center)); }
+}
 /* Scrim: a soft dark pool behind the text block on top of the fade to page colour */
 .hero::after {
   content: ""; position: absolute; inset: 0;
