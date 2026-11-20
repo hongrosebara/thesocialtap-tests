@@ -16,3 +16,4 @@ Every push to `main` deploys automatically.
 
 ## Clients
 - `sacred-earth/`: New Zealand Retreat 2027, Journey Into Stillness 2027
+- `sacred-planet/`: Sacred Pilgrimage Codes (Jocelyn), landing + thank-you page
