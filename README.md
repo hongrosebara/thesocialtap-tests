@@ -4,7 +4,8 @@ Static landing pages served at https://tests.thesocialtap.org via Netlify.
 Every push to `main` deploys automatically.
 
 ## Layout
-- `index.html`: list of projects (update when adding pages)
+- `live-mlfaw/index.html`: private list of projects at /live-mlfaw (update when adding pages; don't link it anywhere)
+- `index.html`: blank root page, so the project list isn't public
 - `<client>/`: one folder per client; each page is `<client>/<page>.html`,
   served at `/<client>/<page>` (no `.html` needed)
 - `_redirects`: Netlify redirects (old URLs → new)

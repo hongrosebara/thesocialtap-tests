@@ -28,6 +28,8 @@ a{color:#DDB57F}a:hover{color:#EFD3A6}
 .field::placeholder{color:#A9A1A8}
 .field:focus{outline:2px solid #DDB57F;outline-offset:2px}
 html{scroll-behavior:smooth}
+.topbar{flex-wrap:nowrap!important}
+@media (max-width:540px){.brand-name{display:none}.top-cta{padding:0 16px!important;font-size:13px!important;white-space:nowrap}}
 </style>
 </head>
 <body>
@@ -36,12 +38,12 @@ html{scroll-behavior:smooth}
 
   <!-- Top bar -->
   <div class="ink-violet">
-  <header style="padding-block: 20px; padding-inline: max(16px, 4vw); display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; max-width: 1240px; margin: 0 auto; box-sizing: border-box">
+  <header class="topbar" style="padding-block: 20px; padding-inline: max(16px, 4vw); display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; max-width: 1240px; margin: 0 auto; box-sizing: border-box">
     <div style="display: flex; align-items: center; gap: 12px">
       <img src="assets/13be9ae950867a2c7651415fd509a3f2.png" alt="Sacred Planet logo" style="width: 52px; height: 52px; border-radius: 50%; display: block">
-      <span style="font-family: 'Nomad', Georgia, serif; font-size: 15px; letter-spacing: 0.22em; text-transform: uppercase; color: #DDB57F">Sacred Planet</span>
+      <span class="brand-name" style="font-family: 'Nomad', Georgia, serif; font-size: 15px; letter-spacing: 0.22em; text-transform: uppercase; color: #DDB57F">Sacred Planet</span>
     </div>
-    <a class="cta" href="#join" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border: 1px solid #DDB57F; border-radius: 999px; color: #DDB57F; text-decoration: none; font-size: 14px; font-weight: 500; letter-spacing: 0.04em">Join the free group</a>
+    <a class="cta top-cta" href="#join" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border: 1px solid #DDB57F; border-radius: 999px; color: #DDB57F; text-decoration: none; font-size: 14px; font-weight: 500; letter-spacing: 0.04em">Join the free group</a>
   </header>
 
   <!-- Hero -->
