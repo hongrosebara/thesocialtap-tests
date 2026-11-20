@@ -30,17 +30,23 @@ a{color:#DDB57F}a:hover{color:#EFD3A6}
 html{scroll-behavior:smooth}
 .topbar{flex-wrap:nowrap!important}
 @media (max-width:540px){.brand-name{display:none}.top-cta{padding:0 16px!important;font-size:13px!important;white-space:nowrap}}
+.gallery-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}
+.v-tablet .sky{background-size:380px 380px}.v-phone .sky{background-size:300px 300px}
+.v-desktop,.v-tablet,.v-phone{display:none}
+@media (min-width:1024px){.v-desktop{display:block}}
+@media (min-width:700px) and (max-width:1023.98px){.v-tablet{display:block}}
+@media (max-width:699.98px){.v-phone{display:block}}
 </style>
 </head>
 <body>
-
+<div class="v-desktop">
 <div class="sky" style="width: 100%; min-height: 100%; font-family: 'Raleway', system-ui, sans-serif; color: #E5DCD8; background-color: #04192A; overflow-x: hidden">
 
   <!-- Top bar -->
   <div class="ink-violet">
   <header class="topbar" style="padding-block: 20px; padding-inline: max(16px, 4vw); display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; max-width: 1240px; margin: 0 auto; box-sizing: border-box">
     <div style="display: flex; align-items: center; gap: 12px">
-      <img src="assets/13be9ae950867a2c7651415fd509a3f2.png" alt="Sacred Planet logo" style="width: 52px; height: 52px; border-radius: 50%; display: block">
+      <img loading="lazy" src="assets/13be9ae950867a2c7651415fd509a3f2.png" alt="Sacred Planet logo" style="width: 52px; height: 52px; border-radius: 50%; display: block">
       <span class="brand-name" style="font-family: 'Nomad', Georgia, serif; font-size: 15px; letter-spacing: 0.22em; text-transform: uppercase; color: #DDB57F">Sacred Planet</span>
     </div>
     <a class="cta top-cta" href="#join" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border: 1px solid #DDB57F; border-radius: 999px; color: #DDB57F; text-decoration: none; font-size: 14px; font-weight: 500; letter-spacing: 0.04em">Join the free group</a>
@@ -71,7 +77,7 @@ html{scroll-behavior:smooth}
       </form>
     </div>
     <div style="flex: 1 1 420px; min-width: 0; position: relative">
-      <img src="assets/7ef236e1f0b021bb58c538b89081cfe4.jpg" alt="Golden pyramids under a sacred-geometry night sky with the Sacred Planet seal" style="width: 100%; max-width: 100%; aspect-ratio: 800 / 717; object-fit: cover; display: block; border-radius: 280px 280px 12px 12px; border: 1px solid rgba(221,181,127,.45)">
+      <img loading="lazy" src="assets/7ef236e1f0b021bb58c538b89081cfe4.jpg" alt="Golden pyramids under a sacred-geometry night sky with the Sacred Planet seal" style="width: 100%; max-width: 100%; aspect-ratio: 800 / 717; object-fit: cover; display: block; border-radius: 280px 280px 12px 12px; border: 1px solid rgba(221,181,127,.45)">
     </div>
   </section>
   </div>
@@ -88,21 +94,21 @@ html{scroll-behavior:smooth}
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px">
         <!-- Stop: Scotland -->
         <article style="display: flex; flex-direction: column; gap: 16px">
-          <img src="assets/34349c305d1adfcaff4920f1e1289f44.jpg" alt="Callanish standing stones, Isle of Lewis" style="aspect-ratio: 4 / 5; width: 100%; max-width: 100%; object-fit: cover; display: block; border-radius: 160px 160px 8px 8px; border: 1px solid rgba(221,181,127,.45)">
+          <img loading="lazy" src="assets/34349c305d1adfcaff4920f1e1289f44.jpg" alt="Callanish standing stones, Isle of Lewis" style="aspect-ratio: 4 / 5; width: 100%; max-width: 100%; object-fit: cover; display: block; border-radius: 160px 160px 8px 8px; border: 1px solid rgba(221,181,127,.45)">
           <p style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #8FCFD6">Waiting when you join</p>
           <h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 22px">Scotland</h3>
           <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #C4BCC0">Walk the stone circles, castles, and sacred cairns across the Scottish isles, as if you were standing there yourself.</p>
         </article>
         <!-- Stop: Egypt -->
         <article style="display: flex; flex-direction: column; gap: 16px">
-          <img src="assets/1a36e3cd9c4f01a2a9df57b8c0847e72.jpg" alt="Inside an ancient Egyptian temple" style="aspect-ratio: 4 / 5; width: 100%; max-width: 100%; object-fit: cover; display: block; border-radius: 160px 160px 8px 8px; border: 1px solid rgba(221,181,127,.45)">
+          <img loading="lazy" src="assets/1a36e3cd9c4f01a2a9df57b8c0847e72.jpg" alt="Inside an ancient Egyptian temple" style="aspect-ratio: 4 / 5; width: 100%; max-width: 100%; object-fit: cover; display: block; border-radius: 160px 160px 8px 8px; border: 1px solid rgba(221,181,127,.45)">
           <p style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #DDB57F">Starts December 1</p>
           <h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 22px">Egypt</h3>
           <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #C4BCC0">Experience the high frequencies of the pyramids and temples, which hold the keys to remembering our truth &amp; our power.</p>
         </article>
         <!-- Stop: Mayan lands -->
         <article style="display: flex; flex-direction: column; gap: 16px">
-          <img src="assets/ec7455d00b88a5fa046a9cab55aeac68.jpg" alt="Temple of the Great Jaguar, Tikal, Guatemala" style="aspect-ratio: 4 / 5; width: 100%; max-width: 100%; object-fit: cover; object-position: center 40%; display: block; border-radius: 160px 160px 8px 8px; border: 1px solid rgba(221,181,127,.45)">
+          <img loading="lazy" src="assets/ec7455d00b88a5fa046a9cab55aeac68.jpg" alt="Temple of the Great Jaguar, Tikal, Guatemala" style="aspect-ratio: 4 / 5; width: 100%; max-width: 100%; object-fit: cover; object-position: center 40%; display: block; border-radius: 160px 160px 8px 8px; border: 1px solid rgba(221,181,127,.45)">
           <p style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #DDB57F">Starts December 15</p>
           <h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 22px">Guatemala &amp; Belize</h3>
           <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #C4BCC0">Explore the mysterious ancient Mayan cities and stunning step pyramids &amp; palaces, rising out of the jungle.</p>
@@ -133,35 +139,35 @@ html{scroll-behavior:smooth}
     </div>
     <div class="gallery">
       <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
-        <img src="assets/74aefef2a20021ed2022bccdafb100dc.jpg" alt="Callanish Stones, Isle of Lewis" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <img loading="lazy" src="assets/74aefef2a20021ed2022bccdafb100dc.jpg" alt="Callanish Stones, Isle of Lewis" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
         <figcaption style="font-size: 14px; line-height: 1.4; color: #C4BCC0">Callanish Stones, Isle of Lewis</figcaption>
       </figure>
       <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
-        <img src="assets/f2ddcfa00dedc778949fe0fc61b64036.jpg" alt="Jocelyn at Luskentyre Beach, Isle of Harris" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <img loading="lazy" src="assets/f2ddcfa00dedc778949fe0fc61b64036.jpg" alt="Jocelyn at Luskentyre Beach, Isle of Harris" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
         <figcaption style="font-size: 14px; line-height: 1.4; color: #C4BCC0">Jocelyn at Luskentyre Beach, Isle of Harris</figcaption>
       </figure>
       <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
-        <img src="assets/ea11daed14bac4a38a416caedb71d1a1.jpg" alt="Lots of Rainbows All Over Scotland!" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <img loading="lazy" src="assets/ea11daed14bac4a38a416caedb71d1a1.jpg" alt="Lots of Rainbows All Over Scotland!" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
         <figcaption style="font-size: 14px; line-height: 1.4; color: #C4BCC0">Lots of Rainbows All Over Scotland!</figcaption>
       </figure>
       <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
-        <img src="assets/5697991c03351e74705a025657adfed3.jpg" alt="Stones of Stenness, Orkney Isles" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <img loading="lazy" src="assets/5697991c03351e74705a025657adfed3.jpg" alt="Stones of Stenness, Orkney Isles" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
         <figcaption style="font-size: 14px; line-height: 1.4; color: #C4BCC0">Stones of Stenness, Orkney Isles</figcaption>
       </figure>
       <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
-        <img src="assets/0b3bd95d5326aad529f4f727a859ff90.jpg" alt="Skara Brae, Orkney Isles" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <img loading="lazy" src="assets/0b3bd95d5326aad529f4f727a859ff90.jpg" alt="Skara Brae, Orkney Isles" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
         <figcaption style="font-size: 14px; line-height: 1.4; color: #C4BCC0">Skara Brae, Orkney Isles</figcaption>
       </figure>
       <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
-        <img src="assets/45b4f809e4b426ab97503cb171e42eda.jpg" alt="Unicorn tapestries, Stirling Castle" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <img loading="lazy" src="assets/45b4f809e4b426ab97503cb171e42eda.jpg" alt="Unicorn tapestries, Stirling Castle" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
         <figcaption style="font-size: 14px; line-height: 1.4; color: #C4BCC0">Unicorn tapestries, Stirling Castle</figcaption>
       </figure>
       <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
-        <img src="assets/7c8cd971b6cc718d260a0c8ce969c9ff.jpg" alt="Clach an Trushal, largest Standing Stone in Scotland" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <img loading="lazy" src="assets/7c8cd971b6cc718d260a0c8ce969c9ff.jpg" alt="Clach an Trushal, largest Standing Stone in Scotland" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
         <figcaption style="font-size: 14px; line-height: 1.4; color: #C4BCC0">Clach an Trushal, largest Standing Stone in Scotland</figcaption>
       </figure>
       <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
-        <img src="assets/c6d032f3562c8b4ef8071eb81da1fc1a.jpg" alt="Light Shining on Water at Brora Beach" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <img loading="lazy" src="assets/c6d032f3562c8b4ef8071eb81da1fc1a.jpg" alt="Light Shining on Water at Brora Beach" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
         <figcaption style="font-size: 14px; line-height: 1.4; color: #C4BCC0">Light Shining on Water at Brora Beach</figcaption>
       </figure>
     </div>
@@ -214,9 +220,9 @@ html{scroll-behavior:smooth}
   <!-- The stones speak -->
   <section class="ink-magenta" style=" border-top: 1px solid rgba(221,181,127,.25); border-bottom: 1px solid rgba(221,181,127,.25)">
     <div style="max-width: 1240px; margin: 0 auto; padding-inline: max(16px, 4vw); padding-block: 96px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
-      <img src="assets/59c83b8845cadb258dd361e5282246d8.jpg" alt="Jocelyn on the shore at Nuweiba, Egypt" style="flex: 0 1 380px; width: 380px; max-width: 100%; min-width: 0; aspect-ratio: 730 / 1028; object-fit: cover; display: block; border-radius: 190px 190px 10px 10px; border: 1px solid rgba(221,181,127,.55)">
+      <img loading="lazy" src="assets/59c83b8845cadb258dd361e5282246d8.jpg" alt="Jocelyn on the shore at Nuweiba, Egypt" style="flex: 0 1 380px; width: 380px; max-width: 100%; min-width: 0; aspect-ratio: 730 / 1028; object-fit: cover; display: block; border-radius: 190px 190px 10px 10px; border: 1px solid rgba(221,181,127,.55)">
       <div style="flex: 1.3 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
-        <img src="assets/9b1605270c82b1c3761334a87a10a89d.png" alt="" aria-hidden="true" style="width: 150px; height: auto; display: block">
+        <img loading="lazy" src="assets/9b1605270c82b1c3761334a87a10a89d.png" alt="" aria-hidden="true" style="width: 150px; height: auto; display: block">
     <p style="margin: 0; font-family: 'Nomad', Georgia, serif; font-size: clamp(24px, 2.6vw, 34px); line-height: 1.3; letter-spacing: 0.04em; color: #DDB57F; text-wrap: balance">What do the stones know? What can they tell us?</p>
         <p style="margin: 0; font-size: 17px; line-height: 1.7; color: #E5DCD8; max-width: 60ch">The stone circles and ancient temples have stood for millennia, watching the stars, sun and moon trace geometric patterns across the sky. They have seen generation after generation pass through.</p>
         <p style="margin: 0; font-size: 17px; line-height: 1.7; color: #E5DCD8; max-width: 60ch">The sacred sites are alive, and they have much to say. In this group I translate the light codes and stone codes that stream through when we visit, and share them with you at every step. Let's go inside, feel their energy and listen for a while.</p>
@@ -280,7 +286,7 @@ html{scroll-behavior:smooth}
 
   <!-- Join -->
   <section id="join" style="max-width: 1240px; margin: 0 auto; padding-inline: max(16px, 4vw); padding-block: 104px 72px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center">
-    <img src="assets/13be9ae950867a2c7651415fd509a3f2.png" alt="Sacred Planet seal" style="width: 132px; height: 132px; border-radius: 50%; display: block; border: 1px solid rgba(221,181,127,.5)">
+    <img loading="lazy" src="assets/13be9ae950867a2c7651415fd509a3f2.png" alt="Sacred Planet seal" style="width: 132px; height: 132px; border-radius: 50%; display: block; border: 1px solid rgba(221,181,127,.5)">
     <p style="margin: 0; font-size: 13px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: #8FCFD6">Our Next Travels Begin on December 1st!</p>
     <h2 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: clamp(32px, 4vw, 52px); line-height: 1.05; text-wrap: balance; max-width: 16ch">Come along and join me</h2>
     <p style="margin: 0; font-size: 18px; line-height: 1.75; color: #C4BCC0; max-width: 52ch">The Sacred Pilgrimage Codes group is completely free. It lights up my heart and soul to visit the sacred sites, and it will be my joy to share them with you.</p>
@@ -301,6 +307,420 @@ html{scroll-behavior:smooth}
   </section>
 
   <footer style="border-top: 1px solid rgba(221,181,127,.2); padding-block: 28px; padding-inline: max(16px, 4vw); text-align: center; font-size: 13px; color: #C4BCC0; letter-spacing: 0.06em">© 2026 Sacred Planet · Sacred Pilgrimage Codes</footer>
+</div>
+</div>
+<div class="v-tablet">
+<div class="sky" style="width: 100%; min-height: 100%; box-sizing: border-box; font-family: 'Raleway', system-ui, sans-serif; color: #E5DCD8; background-color: #04192A; overflow: hidden">
+
+  <div class="ink-violet">
+  <header style="padding: 20px 48px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+    <div style="display: flex; align-items: center; gap: 12px">
+      <img loading="lazy" src="assets/13be9ae950867a2c7651415fd509a3f2.png" alt="Sacred Planet logo" style="width: 48px; height: 48px; border-radius: 50%; display: block">
+      <span style="font-family: 'Nomad', Georgia, serif; font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #DDB57F">Sacred Planet</span>
+    </div>
+    <a class="cta" href="#join-t" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border: 1px solid #DDB57F; border-radius: 999px; color: #DDB57F; text-decoration: none; font-size: 14px; font-weight: 500; letter-spacing: 0.04em">Join the free group</a>
+  </header>
+
+  <!-- Hero: text over art, centered -->
+  <section style="padding: 32px 48px 80px; display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center">
+    <p style="margin: 0; font-size: 13px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: #8FCFD6">Free Telegram group · Join by December 1</p>
+    <h1 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 56px; line-height: 1.04; letter-spacing: 0.01em; text-wrap: balance">Sacred Pilgrimage <span style="color: #DDB57F">Codes</span></h1>
+    <p style="margin: 0; font-family: 'Libre Caslon Text', Georgia, serif; font-style: italic; font-size: 30px; line-height: 1.25; max-width: 24ch">Walk the pyramids of Egypt, the stone circles of Scotland and the Mayan cities with me, from the comfort of your home.</p>
+    <p style="margin: 0; font-size: 18px; line-height: 1.75; color: #C4BCC0; max-width: 52ch">Join me on a free virtual pilgrimage. Through photos, videos and stories, I’ll share what we felt at each sacred site, so you can see which places speak to you.</p>
+    <form action="sacred-pilgrimage-codes-thank-you.html" method="get" style="width: 100%; max-width: 580px; display: flex; flex-direction: column; gap: 14px; padding-top: 6px; text-align: left">
+      <div style="display: flex; gap: 12px">
+        <div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+          <label for="hero-name-t" style="font-size: 13px; letter-spacing: 0.08em; color: #C4BCC0">First name</label>
+          <input class="field" id="hero-name-t" name="first_name" type="text" autocomplete="given-name" required placeholder="Your first name">
+        </div>
+        <div style="flex: 1.3 1 0; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+          <label for="hero-email-t" style="font-size: 13px; letter-spacing: 0.08em; color: #C4BCC0">Email</label>
+          <input class="field" id="hero-email-t" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+        </div>
+      </div>
+      <button class="cta" type="submit" style="display: flex; align-items: center; justify-content: center; min-height: 58px; padding: 0 40px; border: 0; background: #DDB57F; color: #04192A; border-radius: 999px; font: inherit; font-size: 17px; font-weight: 600; letter-spacing: 0.03em; cursor: pointer">Join the free group</button>
+      <span style="font-size: 14px; color: #C4BCC0; text-align: center">Free forever. Your welcome email brings the Telegram group link.</span>
+    </form>
+    <img loading="lazy" src="assets/7ef236e1f0b021bb58c538b89081cfe4.jpg" alt="Golden pyramids under a sacred-geometry night sky with the Sacred Planet seal" style="width: 560px; max-width: 100%; max-width: 100%; aspect-ratio: 800 / 717; object-fit: cover; display: block; margin-top: 24px; border-radius: 280px 280px 12px 12px; border: 1px solid rgba(221,181,127,.45)">
+  </section>
+  </div>
+
+  <!-- The route: 2×2 -->
+  <section style="background: #0A3843; border-top: 1px solid rgba(221,181,127,.25); border-bottom: 1px solid rgba(221,181,127,.25); padding: 80px 48px; display: flex; flex-direction: column; gap: 40px">
+    <div style="display: flex; flex-direction: column; gap: 14px; max-width: 600px">
+      <p style="margin: 0; font-size: 13px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: #DDB57F">The route</p>
+      <h2 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 34px; line-height: 1.1">Where we travel together</h2>
+      <p style="margin: 0; font-size: 17px; line-height: 1.75; color: #C4BCC0">The group opens with Scotland. On December 1 I begin sharing Egypt and the Mayan lands. Every future pilgrimage gets posted as it happens.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 28px">
+      <article style="display: flex; flex-direction: column; gap: 14px">
+        <img loading="lazy" src="assets/34349c305d1adfcaff4920f1e1289f44.jpg" alt="Callanish standing stones, Isle of Lewis" style="aspect-ratio: 1 / 1; width: 100%; max-width: 100%; object-fit: cover; display: block; border-radius: 180px 180px 8px 8px; border: 1px solid rgba(221,181,127,.45)">
+        <p style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #8FCFD6">Waiting when you join</p>
+        <h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 22px">Scotland</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #C4BCC0">Walk the stone circles, castles, and sacred cairns across the Scottish isles, as if you were standing there yourself.</p>
+      </article>
+      <article style="display: flex; flex-direction: column; gap: 14px">
+        <img loading="lazy" src="assets/1a36e3cd9c4f01a2a9df57b8c0847e72.jpg" alt="Inside an ancient Egyptian temple" style="aspect-ratio: 1 / 1; width: 100%; max-width: 100%; object-fit: cover; display: block; border-radius: 180px 180px 8px 8px; border: 1px solid rgba(221,181,127,.45)">
+        <p style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #DDB57F">Starts December 1</p>
+        <h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 22px">Egypt</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #C4BCC0">Experience the high frequencies of the pyramids and temples, which hold the keys to remembering our truth &amp; our power.</p>
+      </article>
+      <article style="display: flex; flex-direction: column; gap: 14px">
+        <img loading="lazy" src="assets/ec7455d00b88a5fa046a9cab55aeac68.jpg" alt="Temple of the Great Jaguar, Tikal, Guatemala" style="aspect-ratio: 1 / 1; width: 100%; max-width: 100%; object-fit: cover; object-position: center 45%; display: block; border-radius: 180px 180px 8px 8px; border: 1px solid rgba(221,181,127,.45)">
+        <p style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #DDB57F">Starts December 15</p>
+        <h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 22px">Guatemala &amp; Belize</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #C4BCC0">Explore the mysterious ancient Mayan cities and stunning step pyramids &amp; palaces, rising out of the jungle.</p>
+      </article>
+      <article style="display: flex; flex-direction: column; gap: 14px">
+        <div style="aspect-ratio: 1 / 1; border: 1px solid rgba(221,181,127,.35); border-radius: 180px 180px 8px 8px; background: #04192A; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center">
+          <span style="font-family: 'Nomad', Georgia, serif; font-size: 19px; color: #DDB57F; letter-spacing: 0.06em">Egypt</span>
+          <span style="font-family: 'Nomad', Georgia, serif; font-size: 19px; color: #DDB57F; letter-spacing: 0.06em">Costa Rica</span>
+          <span style="font-family: 'Nomad', Georgia, serif; font-size: 19px; color: #DDB57F; letter-spacing: 0.06em">Greece</span>
+          <span style="font-family: 'Nomad', Georgia, serif; font-size: 19px; color: #DDB57F; letter-spacing: 0.06em">Mexico</span>
+          <span style="font-size: 13px; color: #C4BCC0">and beyond</span>
+        </div>
+        <h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 22px">Every future trip</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #C4BCC0">Posted live! Wherever I travel, the updates, photos, videos, and insights go to the Telegram group first.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Inside the group -->
+  <section style="padding: 72px 48px; display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+      <p style="margin: 0; font-size: 13px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: #8FCFD6">Waiting for you in the group</p>
+      <h2 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 34px; line-height: 1.15">A first look at Scotland</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.75; color: #C4BCC0">A few of the exciting photos I’ve already posted, from Edinburgh to the Isle of Lewis to Orkney in the far north.</p>
+    </div>
+    <div class="gallery">
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+        <img loading="lazy" src="assets/74aefef2a20021ed2022bccdafb100dc.jpg" alt="Callanish Stones, Isle of Lewis" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <figcaption style="font-size: 13px; line-height: 1.4; color: #C4BCC0">Callanish Stones, Isle of Lewis</figcaption>
+      </figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+        <img loading="lazy" src="assets/f2ddcfa00dedc778949fe0fc61b64036.jpg" alt="Jocelyn at Luskentyre Beach, Isle of Harris" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <figcaption style="font-size: 13px; line-height: 1.4; color: #C4BCC0">Jocelyn at Luskentyre Beach, Isle of Harris</figcaption>
+      </figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+        <img loading="lazy" src="assets/ea11daed14bac4a38a416caedb71d1a1.jpg" alt="Lots of Rainbows All Over Scotland!" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <figcaption style="font-size: 13px; line-height: 1.4; color: #C4BCC0">Lots of Rainbows All Over Scotland!</figcaption>
+      </figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+        <img loading="lazy" src="assets/5697991c03351e74705a025657adfed3.jpg" alt="Stones of Stenness, Orkney Isles" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <figcaption style="font-size: 13px; line-height: 1.4; color: #C4BCC0">Stones of Stenness, Orkney Isles</figcaption>
+      </figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+        <img loading="lazy" src="assets/0b3bd95d5326aad529f4f727a859ff90.jpg" alt="Skara Brae, Orkney Isles" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <figcaption style="font-size: 13px; line-height: 1.4; color: #C4BCC0">Skara Brae, Orkney Isles</figcaption>
+      </figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+        <img loading="lazy" src="assets/45b4f809e4b426ab97503cb171e42eda.jpg" alt="Unicorn tapestries, Stirling Castle" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <figcaption style="font-size: 13px; line-height: 1.4; color: #C4BCC0">Unicorn tapestries, Stirling Castle</figcaption>
+      </figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+        <img loading="lazy" src="assets/7c8cd971b6cc718d260a0c8ce969c9ff.jpg" alt="Clach an Trushal, largest Standing Stone in Scotland" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <figcaption style="font-size: 13px; line-height: 1.4; color: #C4BCC0">Clach an Trushal, largest Standing Stone in Scotland</figcaption>
+      </figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+        <img loading="lazy" src="assets/c6d032f3562c8b4ef8071eb81da1fc1a.jpg" alt="Light Shining on Water at Brora Beach" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <figcaption style="font-size: 13px; line-height: 1.4; color: #C4BCC0">Light Shining on Water at Brora Beach</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- What you receive -->
+  <section style="padding: 80px 48px; display: flex; flex-direction: column; gap: 36px">
+    <div style="display: flex; flex-direction: column; gap: 14px; max-width: 600px">
+      <p style="margin: 0; font-size: 13px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: #DDB57F">What you receive</p>
+      <h2 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 34px; line-height: 1.1">Feel as if you’re there, from the comfort of home</h2>
+      <p style="margin: 0; font-size: 17px; line-height: 1.75; color: #C4BCC0">You don't have to choose one place and invest in the trip. Experience as many sacred sites as you like, without any of the logistics!</p>
+    </div>
+    <div style="display: flex; flex-direction: column">
+      <div style="display: flex; gap: 22px; padding-block: 22px; border-top: 1px solid rgba(221,181,127,.3)">
+        <svg aria-hidden="true" width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#DDB57F" stroke-width="1.4" style="flex: none; margin-top: 4px"><circle cx="14" cy="14" r="11"></circle><circle cx="14" cy="14" r="4"></circle></svg>
+        <div style="display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 18px">A deeper connection to each site</h3><p style="margin: 0; font-size: 16px; line-height: 1.7; color: #C4BCC0">An experiential sense of every place we visit, its energy and its presence.</p></div>
+      </div>
+      <div style="display: flex; gap: 22px; padding-block: 22px; border-top: 1px solid rgba(221,181,127,.3)">
+        <svg aria-hidden="true" width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#DDB57F" stroke-width="1.4" style="flex: none; margin-top: 4px"><path d="M14 3 L25 24 H3 Z"></path><path d="M9 14 H19"></path></svg>
+        <div style="display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 18px">The wisdom each site holds</h3><p style="margin: 0; font-size: 16px; line-height: 1.7; color: #C4BCC0">New understanding of the history, mystery traditions and mythology behind every temple, stone circle, and pyramid.</p></div>
+      </div>
+      <div style="display: flex; gap: 22px; padding-block: 22px; border-top: 1px solid rgba(221,181,127,.3)">
+        <svg aria-hidden="true" width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#DDB57F" stroke-width="1.4" style="flex: none; margin-top: 4px"><path d="M14 3 V25"></path><path d="M14 9 C8 9 5 13 5 13"></path><path d="M14 9 C20 9 23 13 23 13"></path><path d="M14 17 C9 17 7 21 7 21"></path><path d="M14 17 C19 17 21 21 21 21"></path></svg>
+        <div style="display: flex; flex-direction: column; gap: 6px"><h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 18px">Recognition of your own threads</h3><p style="margin: 0; font-size: 16px; line-height: 1.7; color: #C4BCC0">Notice where you may have past lives or ancestral generations connected to a particular site.</p></div>
+      </div>
+      <div style="display: flex; gap: 22px; padding-block: 22px; border-top: 1px solid rgba(221,181,127,.3); border-bottom: 1px solid rgba(221,181,127,.3)">
+        <svg aria-hidden="true" width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#DDB57F" stroke-width="1.4" style="flex: none; margin-top: 4px"><rect x="3" y="7" width="22" height="16" rx="2"></rect><circle cx="14" cy="15" r="4.5"></circle><path d="M10 7 L11.5 4 H16.5 L18 7"></path></svg>
+        <div style="display: flex; flex-direction: column; gap: 10px"><h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 18px">A place on the pilgrimage</h3><p style="margin: 0; font-size: 16px; line-height: 1.7; color: #C4BCC0">Behind-the-scenes details so you’ll feel part of the group:</p>
+          <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 16px; line-height: 1.5"><li>Insights and downloads our group received at the sites</li><li>Images and videos from these powerful, beautiful places</li><li>Funny and heartwarming stories along the way</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The stones speak -->
+  <section class="ink-magenta" style=" border-top: 1px solid rgba(221,181,127,.25); border-bottom: 1px solid rgba(221,181,127,.25); padding: 80px 48px; display: flex; flex-direction: column; align-items: center; gap: 36px; text-align: center">
+    <img loading="lazy" src="assets/59c83b8845cadb258dd361e5282246d8.jpg" alt="Jocelyn on the shore at Nuweiba, Egypt" style="flex: 0 1 320px; width: 320px; max-width: 100%; max-width: 100%; min-width: 0; aspect-ratio: 730 / 1028; object-fit: cover; display: block; border-radius: 160px 160px 10px 10px; border: 1px solid rgba(221,181,127,.55)">
+    <img loading="lazy" src="assets/9b1605270c82b1c3761334a87a10a89d.png" alt="" aria-hidden="true" style="width: 150px; height: auto; display: block">
+    <p style="margin: 0; font-family: 'Nomad', Georgia, serif; font-size: 30px; line-height: 1.3; letter-spacing: 0.04em; color: #DDB57F; max-width: 20ch">What do the stones know? What can they tell us?</p>
+    <p style="margin: 0; font-size: 17px; line-height: 1.7; max-width: 56ch">The stone circles and ancient temples have stood for millennia, watching the stars, sun and moon trace geometric patterns across the sky. They have seen generation after generation pass through.</p>
+    <p style="margin: 0; font-size: 17px; line-height: 1.7; max-width: 56ch">The sacred sites are alive, and they have much to say. In this group I translate the light codes and stone codes that stream through when we visit, and share them with you at every step. Let's go inside, feel their energy and listen for a while.</p>
+    <p style="margin: 0; font-family: 'Nomad', Georgia, serif; font-size: 18px; letter-spacing: 0.08em; color: #DDB57F">Jocelyn · Sacred Planet</p>
+  </section>
+
+  <!-- Voices -->
+  <section style="padding: 80px 48px; display: flex; flex-direction: column; gap: 36px">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <p style="margin: 0; font-size: 13px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: #DDB57F">From inside the group</p>
+      <h2 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 34px; line-height: 1.1">Members on the Scotland journey</h2>
+    </div>
+    <figure style="margin: 0; padding: 36px; border: 1px solid rgba(221,181,127,.45); border-radius: 12px; background: #0A3843; display: flex; flex-direction: column; gap: 16px">
+      <blockquote style="margin: 0; font-family: 'Libre Caslon Text', Georgia, serif; font-style: italic; font-size: 27px; line-height: 1.35">“So profoundly emotional seeing these structural points of reference for eternity. This is just so beautiful for you to share all these… thanks again and again!”</blockquote>
+      <figcaption style="font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: #DDB57F">Karen H.</figcaption>
+    </figure>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 28px">
+      <figure style="margin: 0; padding: 22px 0; border-top: 1px solid rgba(221,181,127,.4); display: flex; flex-direction: column; gap: 12px"><blockquote style="margin: 0; font-size: 17px; line-height: 1.6">“Thank you for sharing! The feelings and sensation I just experienced looking at these pictures, especially the stones at Callanish III, it took me back to another time I was there.”</blockquote><figcaption style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #DDB57F">Laurie</figcaption></figure>
+      <figure style="margin: 0; padding: 22px 0; border-top: 1px solid rgba(221,181,127,.4); display: flex; flex-direction: column; gap: 12px"><blockquote style="margin: 0; font-size: 17px; line-height: 1.6">“Thank you, Jocelyn, for this amazing tour. I especially loved the close up photos of the standing stones at Callanish. They each appeared to have a unique personality.”</blockquote><figcaption style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #DDB57F">Karen M.</figcaption></figure>
+      <figure style="margin: 0; padding: 22px 0; border-top: 1px solid rgba(221,181,127,.4); display: flex; flex-direction: column; gap: 12px"><blockquote style="margin: 0; font-size: 17px; line-height: 1.6">“These images you have shared make a potent gateway to work with these energies. Many thanks for sharing them at this time.”</blockquote><figcaption style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #DDB57F">Gary</figcaption></figure>
+      <figure style="margin: 0; padding: 22px 0; border-top: 1px solid rgba(221,181,127,.4); display: flex; flex-direction: column; gap: 12px"><blockquote style="margin: 0; font-size: 17px; line-height: 1.6">“I always loved to travel to countries and cultures in the past but at this age it is a little more difficult to do physically so I am so grateful that you invited us to travel with you virtually.”</blockquote><figcaption style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #DDB57F">Joyce</figcaption></figure>
+      <figure style="margin: 0; padding: 22px 0; border-top: 1px solid rgba(221,181,127,.4); display: flex; flex-direction: column; gap: 12px"><blockquote style="margin: 0; font-size: 17px; line-height: 1.6">“The history and immensity of these stones just take my breath away. Thank you for taking us along on your journey.”</blockquote><figcaption style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #DDB57F">Karmin</figcaption></figure>
+      <figure style="margin: 0; padding: 22px 0; border-top: 1px solid rgba(221,181,127,.4); display: flex; flex-direction: column; gap: 12px"><blockquote style="margin: 0; font-size: 17px; line-height: 1.6">“Wow Jocelyn these photos are amazing, and I feel the peace deeply.”</blockquote><figcaption style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #DDB57F">Tasha</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- Is this for you -->
+  <section class="ink-teal" style=" padding: 72px 48px; display: flex; flex-direction: column; gap: 28px">
+    <h2 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 30px; line-height: 1.2">This group is for you if…</h2>
+    <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 28px; font-size: 17px; line-height: 1.55">
+      <li style="padding-top: 14px; border-top: 1px solid rgba(229,220,216,.35)">You sense the ancient sacred sites hold keys to our remembrance</li>
+      <li style="padding-top: 14px; border-top: 1px solid rgba(229,220,216,.35)">You feel the great shifts happening within Mother Earth right now</li>
+      <li style="padding-top: 14px; border-top: 1px solid rgba(229,220,216,.35)">You're drawn to Egypt, Scotland, Greece, or the Mayan lands but unsure which to choose</li>
+      <li style="padding-top: 14px; border-top: 1px solid rgba(229,220,216,.35)">You'd love to explore past-life or ancestral ties to particular ancient places</li>
+    </ul>
+  </section>
+
+  <!-- Join -->
+  <section id="join-t" style="padding: 80px 48px 64px; display: flex; flex-direction: column; align-items: center; gap: 24px; text-align: center">
+    <img loading="lazy" src="assets/13be9ae950867a2c7651415fd509a3f2.png" alt="Sacred Planet seal" style="width: 120px; height: 120px; border-radius: 50%; display: block; border: 1px solid rgba(221,181,127,.5)">
+    <p style="margin: 0; font-size: 13px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: #8FCFD6">Our Next Travels Begin on December 1st!</p>
+    <h2 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1.05">Come along and join me</h2>
+    <p style="margin: 0; font-size: 18px; line-height: 1.75; color: #C4BCC0; max-width: 50ch">The Sacred Pilgrimage Codes group is completely free. It lights up my heart and soul to visit the sacred sites, and it will be my joy to share them with you.</p>
+    <form action="sacred-pilgrimage-codes-thank-you.html" method="get" style="width: 100%; max-width: 580px; display: flex; flex-direction: column; gap: 14px; text-align: left">
+      <div style="display: flex; gap: 12px">
+        <div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+          <label for="join-name-t" style="font-size: 13px; letter-spacing: 0.08em; color: #C4BCC0">First name</label>
+          <input class="field" id="join-name-t" name="first_name" type="text" autocomplete="given-name" required placeholder="Your first name">
+        </div>
+        <div style="flex: 1.3 1 0; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+          <label for="join-email-t" style="font-size: 13px; letter-spacing: 0.08em; color: #C4BCC0">Email</label>
+          <input class="field" id="join-email-t" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+        </div>
+      </div>
+      <button class="cta" type="submit" style="display: flex; align-items: center; justify-content: center; min-height: 60px; padding: 0 40px; border: 0; background: #DDB57F; color: #04192A; border-radius: 999px; font: inherit; font-size: 18px; font-weight: 600; letter-spacing: 0.03em; cursor: pointer">Send me the group link</button>
+    </form>
+    <p style="margin: 0; font-size: 14px; color: #C4BCC0; max-width: 46ch">Your welcome email brings the Telegram link. Join by December 1 to follow Egypt from the first post.</p>
+  </section>
+
+  <footer style="border-top: 1px solid rgba(221,181,127,.2); padding: 26px 48px; text-align: center; font-size: 13px; color: #C4BCC0; letter-spacing: 0.06em">© 2026 Sacred Planet · Sacred Pilgrimage Codes</footer>
+</div>
+</div>
+<div class="v-phone">
+<div class="sky" style="width: 100%; min-height: 100%; box-sizing: border-box; font-family: 'Raleway', system-ui, sans-serif; color: #E5DCD8; background-color: #04192A; overflow: hidden">
+
+  <div class="ink-violet">
+  <header style="padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px">
+    <div style="display: flex; align-items: center; gap: 10px">
+      <img loading="lazy" src="assets/13be9ae950867a2c7651415fd509a3f2.png" alt="Sacred Planet logo" style="width: 40px; height: 40px; border-radius: 50%; display: block">
+      <span style="font-family: 'Nomad', Georgia, serif; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #DDB57F">Sacred Planet</span>
+    </div>
+    <a class="cta" href="#join-p" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border: 1px solid #DDB57F; border-radius: 999px; color: #DDB57F; text-decoration: none; font-size: 14px; font-weight: 500">Join free</a>
+  </header>
+
+  <!-- Hero: art first on phone so the thumb-stop image is above the fold -->
+  <section style="padding: 12px 20px 56px; display: flex; flex-direction: column; gap: 18px">
+    <img loading="lazy" src="assets/7ef236e1f0b021bb58c538b89081cfe4.jpg" alt="Golden pyramids under a sacred-geometry night sky with the Sacred Planet seal" style="width: 100%; aspect-ratio: 800 / 600; object-fit: cover; object-position: top; display: block; border-radius: 175px 175px 10px 10px; border: 1px solid rgba(221,181,127,.45)">
+    <p style="margin: 6px 0 0; font-size: 12px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: #8FCFD6">Free Telegram group · Join by Dec 1</p>
+    <h1 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 36px; line-height: 1.04">Sacred Pilgrimage <span style="color: #DDB57F">Codes</span></h1>
+    <p style="margin: 0; font-family: 'Libre Caslon Text', Georgia, serif; font-style: italic; font-size: 24px; line-height: 1.25">Walk the pyramids of Egypt, the stone circles of Scotland and the Mayan cities with me, from the comfort of your home.</p>
+    <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #C4BCC0">Join me on a free virtual pilgrimage. Through photos, videos and stories, I’ll share what we felt at each sacred site, so you can see which places speak to you.</p>
+    <form action="sacred-pilgrimage-codes-thank-you.html" method="get" style="display: flex; flex-direction: column; gap: 12px; margin-top: 4px">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <label for="hero-name-p" style="font-size: 13px; letter-spacing: 0.08em; color: #C4BCC0">First name</label>
+        <input class="field" id="hero-name-p" name="first_name" type="text" autocomplete="given-name" required placeholder="Your first name">
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <label for="hero-email-p" style="font-size: 13px; letter-spacing: 0.08em; color: #C4BCC0">Email</label>
+        <input class="field" id="hero-email-p" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+      </div>
+      <button class="cta" type="submit" style="display: flex; align-items: center; justify-content: center; min-height: 56px; margin-top: 4px; border: 0; background: #DDB57F; color: #04192A; border-radius: 999px; font: inherit; font-size: 17px; font-weight: 600; letter-spacing: 0.03em; cursor: pointer">Join the free group</button>
+    </form>
+    <span style="font-size: 13px; color: #C4BCC0; text-align: center">Free forever. Your welcome email brings the Telegram link.</span>
+  </section>
+  </div>
+
+  <!-- The route: single column, compact cards -->
+  <section style="background: #0A3843; border-top: 1px solid rgba(221,181,127,.25); border-bottom: 1px solid rgba(221,181,127,.25); padding: 56px 20px; display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <p style="margin: 0; font-size: 12px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #DDB57F">The route</p>
+      <h2 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 27px; line-height: 1.12">Where we travel together</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #C4BCC0">The group opens with Scotland. On December 1 I begin sharing Egypt and the Mayan lands.</p>
+    </div>
+    <article style="display: flex; flex-direction: column; gap: 10px">
+      <img loading="lazy" src="assets/34349c305d1adfcaff4920f1e1289f44.jpg" alt="Callanish standing stones, Isle of Lewis" style="aspect-ratio: 4 / 3; width: 100%; max-width: 100%; object-fit: cover; display: block; border-radius: 140px 140px 8px 8px; border: 1px solid rgba(221,181,127,.45)">
+      <p style="margin: 6px 0 0; font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #8FCFD6">Waiting when you join</p>
+      <h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 21px">Scotland</h3>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #C4BCC0">Walk the stone circles, castles, and sacred cairns across the Scottish isles, as if you were standing there yourself.</p>
+    </article>
+    <article style="display: flex; flex-direction: column; gap: 10px">
+      <img loading="lazy" src="assets/1a36e3cd9c4f01a2a9df57b8c0847e72.jpg" alt="Inside an ancient Egyptian temple" style="aspect-ratio: 4 / 3; width: 100%; max-width: 100%; object-fit: cover; display: block; border-radius: 140px 140px 8px 8px; border: 1px solid rgba(221,181,127,.45)">
+      <p style="margin: 6px 0 0; font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #DDB57F">Starts December 1</p>
+      <h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 21px">Egypt</h3>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #C4BCC0">Experience the high frequencies of the pyramids and temples, which hold the keys to remembering our truth &amp; our power.</p>
+    </article>
+    <article style="display: flex; flex-direction: column; gap: 10px">
+      <img loading="lazy" src="assets/ec7455d00b88a5fa046a9cab55aeac68.jpg" alt="Temple of the Great Jaguar, Tikal, Guatemala" style="aspect-ratio: 4 / 3; width: 100%; max-width: 100%; object-fit: cover; object-position: center 45%; display: block; border-radius: 140px 140px 8px 8px; border: 1px solid rgba(221,181,127,.45)">
+      <p style="margin: 6px 0 0; font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #DDB57F">Starts December 15</p>
+      <h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 21px">Guatemala &amp; Belize</h3>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #C4BCC0">Explore the mysterious ancient Mayan cities and stunning step pyramids &amp; palaces, rising out of the jungle.</p>
+    </article>
+    <article style="display: flex; flex-direction: column; gap: 10px; padding: 22px; border: 1px solid rgba(221,181,127,.35); border-radius: 10px; background: #04192A">
+      <p style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #DDB57F">Next pilgrimages · posted live</p>
+      <h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 21px; color: #DDB57F">Egypt · Costa Rica · Greece · Mexico</h3>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #C4BCC0">Posted live! Wherever I travel, the updates, photos, videos, and insights go to the Telegram group first.</p>
+    </article>
+  </section>
+
+  <!-- Inside the group -->
+  <section style="padding: 52px 20px; display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+      <p style="margin: 0; font-size: 13px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: #8FCFD6">Waiting for you in the group</p>
+      <h2 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 27px; line-height: 1.15">A first look at Scotland</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.75; color: #C4BCC0">A few of the exciting photos I’ve already posted, from Edinburgh to the Isle of Lewis to Orkney in the far north.</p>
+    </div>
+    <div class="gallery-2">
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+        <img loading="lazy" src="assets/74aefef2a20021ed2022bccdafb100dc.jpg" alt="Callanish Stones, Isle of Lewis" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <figcaption style="font-size: 12px; line-height: 1.4; color: #C4BCC0">Callanish Stones, Isle of Lewis</figcaption>
+      </figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+        <img loading="lazy" src="assets/f2ddcfa00dedc778949fe0fc61b64036.jpg" alt="Jocelyn at Luskentyre Beach, Isle of Harris" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <figcaption style="font-size: 12px; line-height: 1.4; color: #C4BCC0">Jocelyn at Luskentyre Beach, Isle of Harris</figcaption>
+      </figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+        <img loading="lazy" src="assets/ea11daed14bac4a38a416caedb71d1a1.jpg" alt="Lots of Rainbows All Over Scotland!" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <figcaption style="font-size: 12px; line-height: 1.4; color: #C4BCC0">Lots of Rainbows All Over Scotland!</figcaption>
+      </figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+        <img loading="lazy" src="assets/5697991c03351e74705a025657adfed3.jpg" alt="Stones of Stenness, Orkney Isles" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <figcaption style="font-size: 12px; line-height: 1.4; color: #C4BCC0">Stones of Stenness, Orkney Isles</figcaption>
+      </figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+        <img loading="lazy" src="assets/0b3bd95d5326aad529f4f727a859ff90.jpg" alt="Skara Brae, Orkney Isles" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <figcaption style="font-size: 12px; line-height: 1.4; color: #C4BCC0">Skara Brae, Orkney Isles</figcaption>
+      </figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+        <img loading="lazy" src="assets/45b4f809e4b426ab97503cb171e42eda.jpg" alt="Unicorn tapestries, Stirling Castle" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <figcaption style="font-size: 12px; line-height: 1.4; color: #C4BCC0">Unicorn tapestries, Stirling Castle</figcaption>
+      </figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+        <img loading="lazy" src="assets/7c8cd971b6cc718d260a0c8ce969c9ff.jpg" alt="Clach an Trushal, largest Standing Stone in Scotland" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <figcaption style="font-size: 12px; line-height: 1.4; color: #C4BCC0">Clach an Trushal, largest Standing Stone in Scotland</figcaption>
+      </figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0">
+        <img loading="lazy" src="assets/c6d032f3562c8b4ef8071eb81da1fc1a.jpg" alt="Light Shining on Water at Brora Beach" style="width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 6px">
+        <figcaption style="font-size: 12px; line-height: 1.4; color: #C4BCC0">Light Shining on Water at Brora Beach</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- What you receive -->
+  <section style="padding: 56px 20px; display: flex; flex-direction: column; gap: 24px">
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <p style="margin: 0; font-size: 12px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #DDB57F">What you receive</p>
+      <h2 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 27px; line-height: 1.12">Feel as if you’re there, from the comfort of home</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #C4BCC0">Experience as many sacred sites as you like, without any of the logistics!</p>
+    </div>
+    <div style="display: flex; flex-direction: column">
+      <div style="display: flex; gap: 16px; padding-block: 18px; border-top: 1px solid rgba(221,181,127,.3)">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 28 28" fill="none" stroke="#DDB57F" stroke-width="1.5" style="flex: none; margin-top: 3px"><circle cx="14" cy="14" r="11"></circle><circle cx="14" cy="14" r="4"></circle></svg>
+        <div style="display: flex; flex-direction: column; gap: 4px"><h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 18px">A deeper connection to each site</h3><p style="margin: 0; font-size: 15px; line-height: 1.55; color: #C4BCC0">An experiential sense of every place we visit, its energy and its presence.</p></div>
+      </div>
+      <div style="display: flex; gap: 16px; padding-block: 18px; border-top: 1px solid rgba(221,181,127,.3)">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 28 28" fill="none" stroke="#DDB57F" stroke-width="1.5" style="flex: none; margin-top: 3px"><path d="M14 3 L25 24 H3 Z"></path><path d="M9 14 H19"></path></svg>
+        <div style="display: flex; flex-direction: column; gap: 4px"><h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 18px">The wisdom each site holds</h3><p style="margin: 0; font-size: 15px; line-height: 1.55; color: #C4BCC0">The history, mystery traditions and mythology behind every temple, stone circle, and pyramid.</p></div>
+      </div>
+      <div style="display: flex; gap: 16px; padding-block: 18px; border-top: 1px solid rgba(221,181,127,.3)">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 28 28" fill="none" stroke="#DDB57F" stroke-width="1.5" style="flex: none; margin-top: 3px"><path d="M14 3 V25"></path><path d="M14 9 C8 9 5 13 5 13"></path><path d="M14 9 C20 9 23 13 23 13"></path><path d="M14 17 C9 17 7 21 7 21"></path><path d="M14 17 C19 17 21 21 21 21"></path></svg>
+        <div style="display: flex; flex-direction: column; gap: 4px"><h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 18px">Recognition of your own threads</h3><p style="margin: 0; font-size: 15px; line-height: 1.55; color: #C4BCC0">Notice where you may have past lives or ancestral generations connected to a site.</p></div>
+      </div>
+      <div style="display: flex; gap: 16px; padding-block: 18px; border-top: 1px solid rgba(221,181,127,.3); border-bottom: 1px solid rgba(221,181,127,.3)">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 28 28" fill="none" stroke="#DDB57F" stroke-width="1.5" style="flex: none; margin-top: 3px"><rect x="3" y="7" width="22" height="16" rx="2"></rect><circle cx="14" cy="15" r="4.5"></circle><path d="M10 7 L11.5 4 H16.5 L18 7"></path></svg>
+        <div style="display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 18px">A place on the pilgrimage</h3>
+          <ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; line-height: 1.5"><li>Insights and downloads from the sites</li><li>Images and videos from these powerful places</li><li>Funny and heartwarming stories along the way</li></ul></div>
+      </div>
+    </div>
+    <a class="cta" href="#join-p" style="display: flex; align-items: center; justify-content: center; min-height: 56px; background: #DDB57F; color: #04192A; border-radius: 999px; text-decoration: none; font-size: 17px; font-weight: 600">Join the free group</a>
+  </section>
+
+  <!-- The stones speak -->
+  <section class="ink-magenta" style=" border-top: 1px solid rgba(221,181,127,.25); border-bottom: 1px solid rgba(221,181,127,.25); padding: 56px 20px; display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center">
+    <img loading="lazy" src="assets/59c83b8845cadb258dd361e5282246d8.jpg" alt="Jocelyn on the shore at Nuweiba, Egypt" style="flex: 0 1 240px; width: 240px; max-width: 100%; min-width: 0; aspect-ratio: 730 / 1028; object-fit: cover; display: block; border-radius: 120px 120px 10px 10px; border: 1px solid rgba(221,181,127,.55)">
+    <img loading="lazy" src="assets/9b1605270c82b1c3761334a87a10a89d.png" alt="" aria-hidden="true" style="width: 120px; height: auto; display: block">
+    <p style="margin: 0; font-family: 'Nomad', Georgia, serif; font-size: 24px; line-height: 1.3; letter-spacing: 0.04em; color: #DDB57F">What do the stones know? What can they tell us?</p>
+    <p style="margin: 0; font-size: 16px; line-height: 1.75; text-align: left">The stone circles and ancient temples have stood for millennia, watching the stars, sun and moon trace geometric patterns across the sky.</p>
+    <p style="margin: 0; font-size: 16px; line-height: 1.75; text-align: left">The sacred sites are alive, and they have much to say. In this group I translate the light codes and stone codes that stream through when we visit, and share them with you at every step. Let's go inside, feel their energy and listen for a while.</p>
+    <p style="margin: 0; font-family: 'Nomad', Georgia, serif; font-size: 16px; letter-spacing: 0.08em; color: #DDB57F">Jocelyn · Sacred Planet</p>
+  </section>
+
+  <!-- Voices -->
+  <section style="padding: 56px 20px; display: flex; flex-direction: column; gap: 24px">
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <p style="margin: 0; font-size: 12px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: #DDB57F">From inside the group</p>
+      <h2 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 27px; line-height: 1.12">Members on the Scotland journey</h2>
+    </div>
+    <figure style="margin: 0; padding: 24px; border: 1px solid rgba(221,181,127,.45); border-radius: 10px; background: #0A3843; display: flex; flex-direction: column; gap: 14px">
+      <blockquote style="margin: 0; font-family: 'Libre Caslon Text', Georgia, serif; font-style: italic; font-size: 22px; line-height: 1.35">“So profoundly emotional seeing these structural points of reference for eternity. This is just so beautiful for you to share all these… thanks again and again!”</blockquote>
+      <figcaption style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #DDB57F">Karen H.</figcaption>
+    </figure>
+    <figure style="margin: 0; padding-top: 18px; border-top: 1px solid rgba(221,181,127,.4); display: flex; flex-direction: column; gap: 10px"><blockquote style="margin: 0; font-size: 16px; line-height: 1.6">“The feelings and sensation I just experienced looking at these pictures, especially the stones at Callanish III, it took me back to another time I was there.”</blockquote><figcaption style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #DDB57F">Laurie</figcaption></figure>
+    <figure style="margin: 0; padding-top: 18px; border-top: 1px solid rgba(221,181,127,.4); display: flex; flex-direction: column; gap: 10px"><blockquote style="margin: 0; font-size: 16px; line-height: 1.6">“I especially loved the close up photos of the standing stones at Callanish. They each appeared to have a unique personality.”</blockquote><figcaption style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #DDB57F">Karen M.</figcaption></figure>
+    <figure style="margin: 0; padding-top: 18px; border-top: 1px solid rgba(221,181,127,.4); display: flex; flex-direction: column; gap: 10px"><blockquote style="margin: 0; font-size: 16px; line-height: 1.6">“These images you have shared make a potent gateway to work with these energies.”</blockquote><figcaption style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #DDB57F">Gary</figcaption></figure>
+    <figure style="margin: 0; padding-top: 18px; border-top: 1px solid rgba(221,181,127,.4); display: flex; flex-direction: column; gap: 10px"><blockquote style="margin: 0; font-size: 16px; line-height: 1.6">“The history and immensity of these stones just take my breath away.”</blockquote><figcaption style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #DDB57F">Karmin</figcaption></figure>
+    <figure style="margin: 0; padding-top: 18px; border-top: 1px solid rgba(221,181,127,.4); display: flex; flex-direction: column; gap: 10px"><blockquote style="margin: 0; font-size: 16px; line-height: 1.6">“It is a little more difficult to do physically so I am so grateful that you invited us to travel with you virtually.”</blockquote><figcaption style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #DDB57F">Joyce</figcaption></figure>
+    <figure style="margin: 0; padding-top: 18px; border-top: 1px solid rgba(221,181,127,.4); display: flex; flex-direction: column; gap: 10px"><blockquote style="margin: 0; font-size: 16px; line-height: 1.6">“Wow Jocelyn these photos are amazing, and I feel the peace deeply.”</blockquote><figcaption style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #DDB57F">Tasha</figcaption></figure>
+  </section>
+
+  <!-- Is this for you -->
+  <section class="ink-teal" style=" padding: 52px 20px; display: flex; flex-direction: column; gap: 20px">
+    <h2 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 25px; line-height: 1.2">This group is for you if…</h2>
+    <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.5">
+      <li style="padding-top: 12px; border-top: 1px solid rgba(229,220,216,.35)">You sense the ancient sacred sites hold keys to our remembrance</li>
+      <li style="padding-top: 12px; border-top: 1px solid rgba(229,220,216,.35)">You feel the great shifts happening within Mother Earth right now</li>
+      <li style="padding-top: 12px; border-top: 1px solid rgba(229,220,216,.35)">You're drawn to Egypt, Scotland, Greece, or the Mayan lands but unsure which to choose</li>
+      <li style="padding-top: 12px; border-top: 1px solid rgba(229,220,216,.35)">You'd love to explore past-life or ancestral ties to particular ancient places</li>
+    </ul>
+  </section>
+
+  <!-- Join -->
+  <section id="join-p" style="padding: 64px 20px 48px; display: flex; flex-direction: column; align-items: center; gap: 18px; text-align: center">
+    <img loading="lazy" src="assets/13be9ae950867a2c7651415fd509a3f2.png" alt="Sacred Planet seal" style="width: 96px; height: 96px; border-radius: 50%; display: block; border: 1px solid rgba(221,181,127,.5)">
+    <p style="margin: 0; font-size: 12px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: #8FCFD6">Our Next Travels Begin on December 1st!</p>
+    <h2 style="margin: 0; font-family: 'Nomad', Georgia, serif; font-weight: 400; font-size: 30px; line-height: 1.08">Come along and join me</h2>
+    <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #C4BCC0">The Sacred Pilgrimage Codes group is completely free. It will be my joy to share the sacred sites with you.</p>
+    <form action="sacred-pilgrimage-codes-thank-you.html" method="get" style="align-self: stretch; display: flex; flex-direction: column; gap: 12px; text-align: left">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <label for="join-name-p" style="font-size: 13px; letter-spacing: 0.08em; color: #C4BCC0">First name</label>
+        <input class="field" id="join-name-p" name="first_name" type="text" autocomplete="given-name" required placeholder="Your first name">
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <label for="join-email-p" style="font-size: 13px; letter-spacing: 0.08em; color: #C4BCC0">Email</label>
+        <input class="field" id="join-email-p" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+      </div>
+      <button class="cta" type="submit" style="display: flex; align-items: center; justify-content: center; min-height: 58px; margin-top: 4px; border: 0; background: #DDB57F; color: #04192A; border-radius: 999px; font: inherit; font-size: 17px; font-weight: 600; cursor: pointer">Send me the group link</button>
+    </form>
+    <p style="margin: 0; font-size: 13px; color: #C4BCC0">Your welcome email brings the Telegram link. Join by December 1 to follow Egypt from the first post.</p>
+  </section>
+
+  <footer style="border-top: 1px solid rgba(221,181,127,.2); padding: 22px 20px; text-align: center; font-size: 12px; color: #C4BCC0; letter-spacing: 0.06em">© 2026 Sacred Planet · Sacred Pilgrimage Codes</footer>
+</div>
 </div>
 </body>
 </html>
